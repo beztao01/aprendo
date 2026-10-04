@@ -1,0 +1,149 @@
+:root {
+  --bg-color: #27262b;
+  --sidebar-bg: #1f1e23;
+  --text-color: #e1e1e3;
+  --muted-text: #8c8c94;
+  --link-color: #63a0e8;
+  --border-color: #38373e;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar / Barra lateral */
+.sidebar {
+  width: 280px;
+  background-color: var(--sidebar-bg);
+  border-right: 1px solid var(--border-color);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.site-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 28px;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: var(--link-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: block;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.sidebar-footer {
+  font-size: 0.75rem;
+  color: var(--muted-text);
+  margin-top: 32px;
+  line-height: 1.4;
+}
+
+.sidebar-footer strong {
+  color: var(--text-color);
+}
+
+/* Áreas de contenido principal */
+.main-content {
+  flex: 1;
+  padding: 40px 56px;
+  max-width: 900px;
+}
+
+/* Buscador superior */
+.search-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 16px;
+  margin-bottom: 40px;
+}
+
+.search-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: var(--text-color);
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: var(--muted-text);
+}
+
+/* Tipografía y elementos del documento */
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-bottom: 24px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 36px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #d1d1d6;
+}
+
+ul {
+  margin-left: 20px;
+  margin-bottom: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 32px 0;
+}
